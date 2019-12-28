@@ -44,8 +44,10 @@ export default class SignIn extends Component {
             handleChange={this.onHandleChange} 
             label="Password"
           />
-          <Button type="submit">Sign In</Button>
-          <Button onClick={signInWithGoogle}>Sign In with Google</Button>
+          <div className="buttons">
+            <Button type="submit">Sign In</Button>
+            <Button onClick={signInWithGoogle} isGoogleSignIn={true}>Sign In with Google</Button>
+          </div>
         </form>
       </div>
     )
